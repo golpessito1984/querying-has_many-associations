@@ -7,12 +7,12 @@
 set -e
 
 # Check for necessary programs
-for program in ruby gem createdb; do
-  if ! command -v "$program" > /dev/null; then
-    echo "The $program command is required to perform this exercise." 1>&2
-    exit 1
-  fi
-done
+#for program in ruby gem createdb; do
+#  if ! command -v "$program" > /dev/null; then
+#    echo "The $program command is required to perform this exercise." 1>&2
+#    exit 1
+#  fi
+#done
 
 # Set up Ruby dependencies via Bundler
 if ! command -v bundle > /dev/null; then
